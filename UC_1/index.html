@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodePen-Demo FlexBox3</title> 
+        <style>
+            body{padding: 2em;}
+            .headerContainer{ display: flex;
+            flex-flow: column wrap;
+        align-content: center;
+    background-color: lightcoral;
+font-weight: bold;}
+.footerContainer{
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    background-color: lightsalmon;
+    font-weight: bolder;
+}
+.maincontainer{display: flex;
+flex-flow:row wrap ;
+font-weight: bolder;
+text-align: center;
+ }
+ .maincontaineritem{
+    
+font-weight: bolder;
+text-align: center;
+
+ }
+ .sideBarLeftItem{ background: gold;
+
+ }
+ .sideBarRightItem{ background: plum;}
+ .sideBarItem{
+     flex: 1 0 0; border: 5px solid green; 
+ }
+ .maincontaineritem{flex: 3 0px;}
+ .sideBarLeftItem{order: 1;}
+ .maincontaineritem{order: 2;}
+ .sideBarRightItem{order: 3;}
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"> Header- sample Flexbox Example</header>
+        <div class="maincontainer">
+            <section class="maincontaineritem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of t</p>
+                </article>
+                <article>
+                    <h1> Second Article</h1>
+                    <p> Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of t</p>
+                </article>
+            </section>
+            <sideBar class="sideBarItem sideBarLeftItem"><div class ="center"><p>Left Side</p></div></sideBar>
+                <sideBar class="sideBarItem sideBarRightItem"><div class ="center"><p>Right Side</p></div></sideBar>
+        </div>
+
+        <footer class="footerContainer">Footer- THANK YOU</footer>
+    </body>
+</html>
